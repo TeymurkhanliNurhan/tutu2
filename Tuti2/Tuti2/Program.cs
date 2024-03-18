@@ -18,4 +18,24 @@ public class AverageCalculator
 
         return (double)sum / numbers.Length;
     }
+    public static int FindMaxValue(int[] numbers)
+    {
+        if (numbers == null || numbers.Length == 0)
+        {
+            throw new ArgumentException("The array is either null or empty.");
+        }
+
+        int max = numbers[0]; // Initialize max with the first element of the array
+
+        // Iterate through the array to find the maximum value
+        for (int i = 1; i < numbers.Length; i++)
+        {
+            if (numbers[i] > max)
+            {
+                max = numbers[i];
+            }
+        }
+
+        return max;
+    }
 }
