@@ -11,9 +11,10 @@ public class AverageCalculator
         }
 
         int sum = 0;
-        foreach (int nu in numbers)
+ foreach (int num in numbers)
         {
-            sum += nu;
+            sum += num;
+
         }
 
         return (double)sum / numbers.Length;
